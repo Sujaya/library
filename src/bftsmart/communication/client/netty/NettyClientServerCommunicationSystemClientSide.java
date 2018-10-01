@@ -137,7 +137,7 @@ public class NettyClientServerCommunicationSystemClientSide extends SimpleChanne
                     NettyClientServerSession cs = new NettyClientServerSession(future.channel(), macSend, macReceive, currV[i]);
                     sessionTable.put(currV[i], cs);
 
-                    logger.info("Connecting to replica " + currV[i] + " at " + controller.getRemoteAddress(currV[i]));
+                    //logger.info("Connecting to replica " + currV[i] + " at " + controller.getRemoteAddress(currV[i]));
                     //******* EDUARDO END **************//
 
                     future.awaitUninterruptibly();
@@ -207,7 +207,7 @@ public class NettyClientServerCommunicationSystemClientSide extends SimpleChanne
                         NettyClientServerSession cs = new NettyClientServerSession(future.channel(), macSend, macReceive, currV[i]);
                         sessionTable.put(currV[i], cs);
 
-                        logger.info("Connecting to replica " + currV[i] + " at " + controller.getRemoteAddress(currV[i]));
+                        //logger.info("Connecting to replica " + currV[i] + " at " + controller.getRemoteAddress(currV[i]));
                         //******* EDUARDO END **************//
 
                         future.awaitUninterruptibly();

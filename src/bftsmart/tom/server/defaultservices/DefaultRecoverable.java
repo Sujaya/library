@@ -126,7 +126,7 @@ public abstract class DefaultRecoverable implements Recoverable, BatchExecutable
                 stateLock.unlock();
             }
 
-            logger.info("Performing checkpoint for consensus " + cid);
+            //logger.info("Performing checkpoint for consensus " + cid);
             stateLock.lock();
             byte[] snapshot = getSnapshot();
             stateLock.unlock();

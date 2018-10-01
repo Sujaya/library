@@ -242,7 +242,7 @@ public class NettyClientServerCommunicationSystemServerSide extends SimpleChanne
 				NettyClientServerSession value = (NettyClientServerSession) m.getValue();
 				if (ctx.channel().equals(value.getChannel())) {
 					int key = (Integer) m.getKey();
-					logger.info("Removing client channel with ID= " + key);
+					//logger.info("Removing client channel with ID= " + key);
 					sessionTable.remove(key);
 					logger.info("Active clients=" + sessionTable.size());
 					break;

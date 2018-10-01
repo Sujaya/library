@@ -84,7 +84,7 @@ public class ThroughputLatencyClient {
     
         exec.shutdown();
 
-        System.out.println("All clients done.");
+        //System.out.println("All clients done.");
     }
 
     static class Client extends Thread {
@@ -113,7 +113,7 @@ public class ThroughputLatencyClient {
 
         public void run() {
 
-            System.out.println("Warm up...");
+            //System.out.println("Warm up...");
 
             int req = 0;
             
@@ -140,7 +140,7 @@ public class ThroughputLatencyClient {
 
             Storage st = new Storage(numberOfOps / 2);
 
-            System.out.println("Executing experiment for " + numberOfOps / 2 + " ops");
+            //System.out.println("Executing experiment for " + numberOfOps / 2 + " ops");
 
             for (int i = 0; i < numberOfOps / 2; i++, req++) {
                 long last_send_instant = System.nanoTime();
