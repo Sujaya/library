@@ -262,7 +262,7 @@ public class NettyClientServerCommunicationSystemClientSide extends SimpleChanne
             return;
         }
         
-        logger.info("Channel active");
+        //logger.info("Channel active");
     }
 
     public void reconnect(final ChannelHandlerContext ctx){
